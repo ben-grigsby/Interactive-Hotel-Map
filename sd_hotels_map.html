@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_22c8132a9c16050409332633eb0cd46a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_22c8132a9c16050409332633eb0cd46a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_22c8132a9c16050409332633eb0cd46a = L.map(
+                "map_22c8132a9c16050409332633eb0cd46a",
+                {
+                    center: [32.720434, -117.158677],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d3382897b0fc6015b65e8550ca7bebb1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d3382897b0fc6015b65e8550ca7bebb1.addTo(map_22c8132a9c16050409332633eb0cd46a);
+        
+    
+            var marker_51b9b16c4621a864f289859fdbcb62f3 = L.marker(
+                [32.720434, -117.158677],
+                {
+}
+            ).addTo(map_22c8132a9c16050409332633eb0cd46a);
+        
+    
+            var icon_12e2aacda66a0919f1b920776f31b62f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2095378c92565da5b8211ab277213892 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83c010b8ce305f293322260ff6392bd2 = $(`<div id="html_83c010b8ce305f293322260ff6392bd2" style="width: 100.0%; height: 100.0%;">1430 7th Ave, San Diego, CA, 92101</div>`)[0];
+                popup_2095378c92565da5b8211ab277213892.setContent(html_83c010b8ce305f293322260ff6392bd2);
+            
+        
+
+        marker_51b9b16c4621a864f289859fdbcb62f3.bindPopup(popup_2095378c92565da5b8211ab277213892)
+        ;
+
+        
+    
+    
+            marker_51b9b16c4621a864f289859fdbcb62f3.bindTooltip(
+                `<div>
+                     Click for address
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_51b9b16c4621a864f289859fdbcb62f3.setIcon(icon_12e2aacda66a0919f1b920776f31b62f);
+            
+    
+            var marker_feee5672b25ee17d14734d67e3ffcaac = L.marker(
+                [32.761251099999996, -117.17249921545147],
+                {
+}
+            ).addTo(map_22c8132a9c16050409332633eb0cd46a);
+        
+    
+            var icon_1c743a368baeb7b40ea1d1d465284332 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a61f82c139e92e68e5e1eb686e9fc02a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fcdd88508bd60f39e82cd41122cca5a3 = $(`<div id="html_fcdd88508bd60f39e82cd41122cca5a3" style="width: 100.0%; height: 100.0%;">950 Hotel Cir N, San Diego, CA, 92108</div>`)[0];
+                popup_a61f82c139e92e68e5e1eb686e9fc02a.setContent(html_fcdd88508bd60f39e82cd41122cca5a3);
+            
+        
+
+        marker_feee5672b25ee17d14734d67e3ffcaac.bindPopup(popup_a61f82c139e92e68e5e1eb686e9fc02a)
+        ;
+
+        
+    
+    
+            marker_feee5672b25ee17d14734d67e3ffcaac.bindTooltip(
+                `<div>
+                     Click for address
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_feee5672b25ee17d14734d67e3ffcaac.setIcon(icon_1c743a368baeb7b40ea1d1d465284332);
+            
+    
+            var marker_2c76e0e51fc60330f9c0f629bbffb487 = L.marker(
+                [32.745372599999996, -117.18774095657332],
+                {
+}
+            ).addTo(map_22c8132a9c16050409332633eb0cd46a);
+        
+    
+            var icon_e918824ac89b674c16c49ba95635aadc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_534cc34bc2a73caf8e708480e0031a75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84caf29d3b12f5cf112d8c6cd89dd350 = $(`<div id="html_84caf29d3b12f5cf112d8c6cd89dd350" style="width: 100.0%; height: 100.0%;">1955 San Diego Ave, San Diego, CA, 92110</div>`)[0];
+                popup_534cc34bc2a73caf8e708480e0031a75.setContent(html_84caf29d3b12f5cf112d8c6cd89dd350);
+            
+        
+
+        marker_2c76e0e51fc60330f9c0f629bbffb487.bindPopup(popup_534cc34bc2a73caf8e708480e0031a75)
+        ;
+
+        
+    
+    
+            marker_2c76e0e51fc60330f9c0f629bbffb487.bindTooltip(
+                `<div>
+                     Click for address
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2c76e0e51fc60330f9c0f629bbffb487.setIcon(icon_e918824ac89b674c16c49ba95635aadc);
+            
+</script>
+</html>

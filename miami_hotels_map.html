@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d9192d65a5f168c12f66cdac9892c146 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d9192d65a5f168c12f66cdac9892c146" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d9192d65a5f168c12f66cdac9892c146 = L.map(
+                "map_d9192d65a5f168c12f66cdac9892c146",
+                {
+                    center: [25.76457269387755, -80.19304959183674],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_863c398d7c0c79d96cc0b3f6837126a2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_863c398d7c0c79d96cc0b3f6837126a2.addTo(map_d9192d65a5f168c12f66cdac9892c146);
+        
+    
+            var marker_486f617d9077624238481153cb4cdeb6 = L.marker(
+                [25.76457269387755, -80.19304959183674],
+                {
+}
+            ).addTo(map_d9192d65a5f168c12f66cdac9892c146);
+        
+    
+            var icon_d6c24f1453d4793703d7f5905deab0f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4ccff0f1fbd9c7c564bec2416fd1fc6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b31689d9bea72a1151e2d0d2e5512e57 = $(`<div id="html_b31689d9bea72a1151e2d0d2e5512e57" style="width: 100.0%; height: 100.0%;">11 SE 10th Street, Miami, FL, 33130</div>`)[0];
+                popup_b4ccff0f1fbd9c7c564bec2416fd1fc6.setContent(html_b31689d9bea72a1151e2d0d2e5512e57);
+            
+        
+
+        marker_486f617d9077624238481153cb4cdeb6.bindPopup(popup_b4ccff0f1fbd9c7c564bec2416fd1fc6)
+        ;
+
+        
+    
+    
+            marker_486f617d9077624238481153cb4cdeb6.bindTooltip(
+                `<div>
+                     Click for address
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_486f617d9077624238481153cb4cdeb6.setIcon(icon_d6c24f1453d4793703d7f5905deab0f7);
+            
+    
+            var marker_c6a05d1afe3c1270e37981238b93db62 = L.marker(
+                [25.79925605, -80.25150345975722],
+                {
+}
+            ).addTo(map_d9192d65a5f168c12f66cdac9892c146);
+        
+    
+            var icon_0de0391037c7ba59ca71d2d9ef04affe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8ec925da2ad1bea7e7be4fd54bc6cd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ddf321487af4fa98e6da8d035bb69d4 = $(`<div id="html_4ddf321487af4fa98e6da8d035bb69d4" style="width: 100.0%; height: 100.0%;">3401 NW 25th St, Miami, FL, 33142</div>`)[0];
+                popup_d8ec925da2ad1bea7e7be4fd54bc6cd3.setContent(html_4ddf321487af4fa98e6da8d035bb69d4);
+            
+        
+
+        marker_c6a05d1afe3c1270e37981238b93db62.bindPopup(popup_d8ec925da2ad1bea7e7be4fd54bc6cd3)
+        ;
+
+        
+    
+    
+            marker_c6a05d1afe3c1270e37981238b93db62.bindTooltip(
+                `<div>
+                     Click for address
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c6a05d1afe3c1270e37981238b93db62.setIcon(icon_0de0391037c7ba59ca71d2d9ef04affe);
+            
+    
+            var marker_54580b1a6f1bcacf74dc57975ec19fa5 = L.marker(
+                [25.799854699999997, -80.26358946778421],
+                {
+}
+            ).addTo(map_d9192d65a5f168c12f66cdac9892c146);
+        
+    
+            var icon_62d0d9c229ac9ee080c2b2010db05a4c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b547549cdffe9942c9bf03ee907ef13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6ad4f2c41ad11e09072e9c677a762450 = $(`<div id="html_6ad4f2c41ad11e09072e9c677a762450" style="width: 100.0%; height: 100.0%;">2601 NW 42nd Avenue, Miami, FL, 33142</div>`)[0];
+                popup_8b547549cdffe9942c9bf03ee907ef13.setContent(html_6ad4f2c41ad11e09072e9c677a762450);
+            
+        
+
+        marker_54580b1a6f1bcacf74dc57975ec19fa5.bindPopup(popup_8b547549cdffe9942c9bf03ee907ef13)
+        ;
+
+        
+    
+    
+            marker_54580b1a6f1bcacf74dc57975ec19fa5.bindTooltip(
+                `<div>
+                     Click for address
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_54580b1a6f1bcacf74dc57975ec19fa5.setIcon(icon_62d0d9c229ac9ee080c2b2010db05a4c);
+            
+</script>
+</html>

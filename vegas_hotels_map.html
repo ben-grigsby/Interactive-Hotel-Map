@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_be72a20c8bc618813d7e5971da787922 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_be72a20c8bc618813d7e5971da787922" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_be72a20c8bc618813d7e5971da787922 = L.map(
+                "map_be72a20c8bc618813d7e5971da787922",
+                {
+                    center: [36.04172465, -115.18422582405923],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_97e281120017083fffa3fb04be18e560 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_97e281120017083fffa3fb04be18e560.addTo(map_be72a20c8bc618813d7e5971da787922);
+        
+    
+            var marker_15aff7aa012e55b4afcd919d4ee112bd = L.marker(
+                [36.04172465, -115.18422582405923],
+                {
+}
+            ).addTo(map_be72a20c8bc618813d7e5971da787922);
+        
+    
+            var icon_a02c507704d978d3a2586743f05e3b5c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_677801c217b454387f5d1c7b37578161 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7ed91b75f9691631df6c1511dbddadf = $(`<div id="html_c7ed91b75f9691631df6c1511dbddadf" style="width: 100.0%; height: 100.0%;">3333 Blue Diamond Rd, Las Vegas, NV, 89139</div>`)[0];
+                popup_677801c217b454387f5d1c7b37578161.setContent(html_c7ed91b75f9691631df6c1511dbddadf);
+            
+        
+
+        marker_15aff7aa012e55b4afcd919d4ee112bd.bindPopup(popup_677801c217b454387f5d1c7b37578161)
+        ;
+
+        
+    
+    
+            marker_15aff7aa012e55b4afcd919d4ee112bd.bindTooltip(
+                `<div>
+                     Click for address
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_15aff7aa012e55b4afcd919d4ee112bd.setIcon(icon_a02c507704d978d3a2586743f05e3b5c);
+            
+    
+            var marker_336918bef765645d097cb20c774b2c36 = L.marker(
+                [36.13733555, -115.15927055583407],
+                {
+}
+            ).addTo(map_be72a20c8bc618813d7e5971da787922);
+        
+    
+            var icon_4686e39957099d1c64f9442f40f8469c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15666a8c51584bf704a3309ad2c341a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be8c918bde5fd7a765239dfa2c6dac78 = $(`<div id="html_be8c918bde5fd7a765239dfa2c6dac78" style="width: 100.0%; height: 100.0%;">2777 South Las Vegas Boulevard, Las Vegas, NV, 89109</div>`)[0];
+                popup_15666a8c51584bf704a3309ad2c341a9.setContent(html_be8c918bde5fd7a765239dfa2c6dac78);
+            
+        
+
+        marker_336918bef765645d097cb20c774b2c36.bindPopup(popup_15666a8c51584bf704a3309ad2c341a9)
+        ;
+
+        
+    
+    
+            marker_336918bef765645d097cb20c774b2c36.bindTooltip(
+                `<div>
+                     Click for address
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_336918bef765645d097cb20c774b2c36.setIcon(icon_4686e39957099d1c64f9442f40f8469c);
+            
+    
+            var marker_268671f4afcaa5a10a78d2773e325e18 = L.marker(
+                [36.1356551, -115.15134287931016],
+                {
+}
+            ).addTo(map_be72a20c8bc618813d7e5971da787922);
+        
+    
+            var icon_1adfa62849b8112593d20e30e1e23ce4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f3041f6ba751bf640753d03e08acd78 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68b7a65c7c2f3272504baf00a94e799d = $(`<div id="html_68b7a65c7c2f3272504baf00a94e799d" style="width: 100.0%; height: 100.0%;">3000 Paradise Road, Las Vegas, NV, 89109</div>`)[0];
+                popup_5f3041f6ba751bf640753d03e08acd78.setContent(html_68b7a65c7c2f3272504baf00a94e799d);
+            
+        
+
+        marker_268671f4afcaa5a10a78d2773e325e18.bindPopup(popup_5f3041f6ba751bf640753d03e08acd78)
+        ;
+
+        
+    
+    
+            marker_268671f4afcaa5a10a78d2773e325e18.bindTooltip(
+                `<div>
+                     Click for address
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_268671f4afcaa5a10a78d2773e325e18.setIcon(icon_1adfa62849b8112593d20e30e1e23ce4);
+            
+</script>
+</html>
